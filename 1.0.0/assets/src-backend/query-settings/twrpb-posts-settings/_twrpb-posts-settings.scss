@@ -1,0 +1,12 @@
+.twrpb-posts-settings {
+	&__posts-search-wrap {
+		display: flex;
+		flex-wrap: wrap;
+
+		input {
+			width: 450px;
+			max-width: 100%;
+			margin-right: 0.3rem;
+		}
+	}
+}

@@ -1,0 +1,219 @@
+.twrpb-widget-form {
+
+	// Select Query.
+	&__select-query-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__select-query-to-add-text,
+	&__select-query-to-add {
+		margin-right: 8px;
+	}
+
+	&__select-query-to-add {
+		flex-shrink: 1;
+	}
+
+	// Increase specificity to overwrite WP default style.
+	&__select-query-to-add#{&}__select-query-to-add#{&}__select-query-to-add {
+		max-width: 170px;
+		max-width: clamp(100px, 220px, calc(100% - 130px));
+	}
+
+	&__selected-queries-list {
+		margin-right: -4px;
+		margin-left: -4px;
+	}
+
+	&__failed-to-load-query-tab {
+		display: none;
+	}
+
+	// Selected Queries
+	&__selected-queries { /* stylelint-disable-next-line rule */
+	}
+
+	&__selected-query { /* stylelint-disable-next-line rule */
+	}
+
+	&__selected-query-title {
+		display: flex;
+		align-items: center;
+		padding: 0.6rem;
+		margin: 0;
+		cursor: pointer;
+		background-color: #f9f9f9;
+		border: 1px solid #cacaca;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+
+	&__accordion-indicator {
+		display: inline-block;
+		margin: 0 0.6rem 0 0.2rem;
+		border: 7px solid transparent;
+		border-right: 0;
+		border-left-color: rgb(136, 136, 136);
+		-webkit-transition: -webkit-transform 250ms linear;
+		transition: -webkit-transform 250ms linear;
+		transition: transform 250ms linear;
+		transition: transform 250ms linear, -webkit-transform 250ms linear;
+	}
+
+	&__remove-selected-query {
+		margin-left: auto;
+	}
+
+	&__selected-query-settings {
+		padding: 0.5rem;
+		background-color: white;
+		border: 1px solid #cacaca;
+		border-top: 0;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	&__paragraph {
+		margin: 0.7rem 0;
+	}
+
+	&__query-description-title {
+		margin: 0.5rem 0;
+		font-size: 0.9rem;
+	}
+
+	&__style-separator {
+		margin: 0.6rem 0;
+	}
+
+	&__article-block-selector-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__article-block-select-option {
+		max-width: 150px;
+	}
+
+	&__article-block-selector-text {
+		margin-right: 4px;
+	}
+
+	// Loading Article Block
+
+	&__article-block-loading {
+		cursor: wait;
+		opacity: 0.55;
+	}
+
+	&__article-block-loading-spinner {
+		display: none;
+		flex-shrink: 0;
+		width: 25px;
+		height: 25px;
+		margin-left: 8px;
+	}
+
+	// Controls:
+
+	&__paragraph-select-control {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__select-label-before,
+	&__select-label-after {
+		margin: 0.3rem 0.2rem;
+	}
+
+	&__select-label-before {
+		margin-left: 0;
+	}
+
+	&__select-label-after {
+		margin-right: 0;
+	}
+
+	&__paragraph-color-control {
+		> * {
+			vertical-align: middle;
+		}
+
+		.pickr {
+			display: inline-block;
+			margin: 0 0.4rem;
+
+			button {
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.85), 0 0 0 3px rgba(112, 112, 112, 0.65);
+			}
+		}
+	}
+
+	&__paragraph-checkbox-control {
+		input {
+			margin-right: 0.2rem;
+			margin-left: 0.2rem;
+			vertical-align: bottom;
+			vertical-align: -webkit-baseline-middle;
+		}
+	}
+
+	&__display-meta {
+		.twrpb-widget-form__select-control {
+			flex-basis: 55%;
+			flex-grow: 1;
+			min-width: 160px;
+			max-width: 220px;
+		}
+	}
+
+	// Show/Hide meta locations.
+
+	&__artblock-tooltip-info {
+		margin: 0.7rem 0;
+	}
+
+	&__artblock-tooltip-content {
+		display: none;
+		margin-top: 0.6rem;
+	}
+
+	&__artblock-tooltip-img {
+		width: 250px;
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	// Loading spinner.
+	&__query-loading {
+		display: none;
+		flex-shrink: 0;
+		width: 25px;
+		height: 25px;
+		margin-left: 8px;
+	}
+}
+
+/**
+ * When widget queries settings are synced, we must hide all the settings except
+ * the ones from the first query.
+ */
+.twrpb-widget-form--js-sync-settings {
+	.twrpb-widget-form__selected-query ~ .twrpb-widget-form__selected-query {
+		.twrpb-widget-form__article-block-selector-wrapper,
+		.twrpb-widget-form__query-description-title:not(:first-child),
+		.twrpb-widget-form__style-separator,
+		.twrpb-widget-form__article-block-settings-container {
+			display: none;
+		}
+	}
+}
+
+/**
+ * Using default jQuery ui classes.
+ */
+.ui-accordion-header-active .twrpb-widget-form__accordion-indicator {
+	transform: rotate(90deg);
+}

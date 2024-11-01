@@ -1,0 +1,95 @@
+.twrp-tab-bs {
+	@include twrp-tab-clean-style('.twrp-tab-bs');
+
+	&__btns-wrapper {
+		flex-wrap: wrap;
+	}
+
+	&__btn-item {
+		margin: 0 5px 5px 0;
+	}
+
+	&__btn {
+		padding: 1px 0.5rem;
+		color: var(--twrp-accent-best-text-color);
+		background-color: var(--twrp-lighter-accent-color);
+		border: 1px solid var(--twrp-lighter-accent-color);
+		border-radius: var(--twrp-border-radius);
+		transition: var(--twrp-default-component-transition);
+
+		&:hover,
+		&:focus {
+			background-color: var(--twrp-accent-color);
+		}
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 2px var(--twrp-outline-accent-color);
+		}
+		&:focus:not(:focus-visible) {
+			box-shadow: none;
+		}
+	}
+
+	&__btn[aria-selected="true"],
+	&__btn-item:not([role]):first-child .twrp-tab-bs__btn {
+		background-color: var(--twrp-accent-color);
+		border-color: var(--twrp-accent-color);
+	}
+
+	&__contents-wrapper,
+	&__btns-wrapper {
+		background-color: var(--twrp-background-color);
+	}
+}
+
+.twrp-tab-bs--inverse .twrp-tab-bs {
+
+	/* stylelint-disable no-descending-specificity */
+	&__btn {
+		color: var(--twrp-accent-best-text-color);
+		background-color: var(--twrp-accent-color);
+
+		&:hover,
+		&:focus {
+			background-color: var(--twrp-lighter-accent-color);
+		}
+	}
+	/* stylelint-enable no-descending-specificity */
+
+	&__btn[aria-selected="true"],
+	&__btn-item:not([role]):first-child .twrp-tab-bs__btn {
+		color: var(--twrp-accent-color);
+		background-color: var(--twrp-secondary-background-color);
+	}
+}
+
+.twrp-tab-bs--neon .twrp-tab-bs {
+	&__btn-item {
+		margin: 0 6px 6px 0;
+	}
+
+	/* stylelint-disable no-descending-specificity */
+	&__btn {
+		position: relative;
+		color: var(--twrp-accent-color);
+		background-color: var(--twrp-secondary-background-color);
+		border: 1px solid var(--twrp-accent-color);
+		border-right: 3px solid var(--twrp-accent-color);
+		border-bottom: 3px solid var(--twrp-accent-color);
+
+		&:hover {
+			color: var(--twrp-accent-best-text-color);
+			background-color: var(--twrp-lighter-accent-color);
+		}
+	}
+	/* stylelint-enable no-descending-specificity */
+
+	&__btn[aria-selected="true"],
+	&__btn-item:not([role]):first-child .twrp-tab-bs__btn {
+		color: var(--twrp-accent-best-text-color);
+		background-color: var(--twrp-accent-color);
+		border-right-color: var(--twrp-darker-accent-color);
+		border-bottom-color: var(--twrp-darker-accent-color);
+	}
+}

@@ -1,0 +1,14 @@
+.twrpb-author-settings {
+	&__author-search-wrap {
+		display: flex;
+		flex-wrap: wrap;
+
+		input {
+			margin-right: 0.3rem;
+		}
+	}
+
+	&__author-search {
+		margin-right: 6px;
+	}
+}

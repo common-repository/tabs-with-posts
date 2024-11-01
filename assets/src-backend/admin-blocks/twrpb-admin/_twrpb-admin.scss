@@ -1,0 +1,30 @@
+.twrpb-admin {
+	font-size: 1rem;
+
+	p,
+	input,
+	textarea,
+	select {
+		font-size: 1rem;
+	}
+
+	input[type="checkbox"] {
+		vertical-align: sub;
+	}
+
+	// WP adds by default a min-height to all inputs, which will prevent jQuery
+	// hide or show to transition nicely.
+	input,
+	select {
+		min-height: auto !important;
+	}
+
+	select option:disabled {
+		font-style: italic;
+		color: #444;
+	}
+}
+
+#adminmenu .wp-submenu a[href="options-general.php?page=tabs_with_recommended_posts-contact"]:not(.current) {
+	display: none;
+}

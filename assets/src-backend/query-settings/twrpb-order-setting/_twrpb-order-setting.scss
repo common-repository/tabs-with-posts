@@ -1,0 +1,14 @@
+.twrpb-order-setting {
+	&__order-group {
+		display: flex;
+		flex-wrap: wrap;
+
+		&:not(.twrpb-order-setting__order-group:first-child) {
+			margin-top: 0;
+		}
+	}
+
+	&__js-orderby {
+		margin-right: 0.4rem;
+	}
+}

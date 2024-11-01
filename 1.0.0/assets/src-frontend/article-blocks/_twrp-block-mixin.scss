@@ -1,0 +1,36 @@
+@mixin twrp-block-mixin {
+	position: relative;
+	max-width: var(--twrp-artblock-max-width);
+	overflow: hidden;
+
+	&__meta {
+		font-size: var(--twrp-meta-font-size);
+		line-height: var(--twrp-meta-line-height);
+		color: var(--twrp-text-color);
+		transition: var(--twrp-default-component-transition);
+		font-variant-numeric: lining-nums;
+
+		.twrp-i {
+			margin-right: 0.3em;
+		}
+	}
+
+	&__title {
+		display: -webkit-box;
+		max-height: calc(calc(var(--twrp-title-font-size) * var(--twrp-title-line-clamp)) * var(--twrp-title-line-height));
+		overflow: hidden;
+		font-size: var(--twrp-title-font-size);
+		line-height: var(--twrp-title-line-height);
+		color: var(--twrp-text-color);
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		transition: var(--twrp-default-component-transition);
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: var(--twrp-title-line-clamp);
+	}
+
+	.twrp-i--disabled-comment {
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,193 @@
+.twrpb-docs {
+	max-width: 900px;
+
+	&__text {
+		max-width: 700px;
+		padding: 16px;
+		margin: 1.5rem 0;
+		font-size: 1rem;
+		background-color: #fff;
+		border-radius: 4px;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	&__text--full {
+		max-width: 100%;
+	}
+
+	&__text .twrpb-docs__title-section {
+		margin-top: 0.3rem;
+		margin-bottom: 1rem;
+	}
+
+	&__title-section {
+		font-size: 1.4rem;
+	}
+
+	&__title-sub-section {
+		font-size: 1.1rem;
+	}
+
+	// Plugins support
+	&__twrpb-plugins-support {
+		box-sizing: border-box;
+	}
+
+	&__plugins-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -8px;
+	}
+
+	&__docs-plugin {
+		box-sizing: border-box;
+		display: flex;
+		flex-grow: 1;
+		max-width: calc(50% - 16px);
+		padding: 16px;
+		margin: 8px;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		&__docs-plugin {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+
+	&__premium-only-note {
+		font-size: 0.9rem;
+		color: rgb(194, 0, 0);
+	}
+
+	&__premium-locked-plugin {
+		background-color: rgb(255, 223, 223);
+		opacity: 0.85;
+	}
+
+	&__plugin-avatar-wrapper {
+		max-width: 110px;
+		height: auto;
+		margin-right: 16px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__plugin-title {
+		margin: 2px 0 12px;
+		font-size: 1.2rem;
+	}
+
+	&__plugin-author-wrap,
+	&__plugin-version-wrap,
+	&__plugin-tested-version-wrap {
+		margin: 0 0 2px;
+		line-height: 1.5;
+	}
+
+	&__plugin-not-active-text,
+	&__plugin-not-installed-text {
+		display: inline-block;
+		margin-left: 0.2rem;
+		font-weight: 600;
+		color: rgb(206, 141, 0);
+	}
+
+	&__plugin-used-text {
+		display: inline-block;
+		margin-left: 0.2rem;
+		font-weight: 600;
+		color: rgb(8, 152, 0);
+	}
+
+	// Icons spoilers.
+
+	&__icon-spoiler-category {
+		margin: 1rem 0;
+	}
+
+	&__spoiler {
+		padding: 0 16px 16px;
+		margin: 0.5rem 0 0;
+		background-color: white;
+		border-radius: 4px;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	&__text .twrpb-docs__spoiler {
+		padding: 0;
+		background-color: transparent;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	&__spoiler-icon-group {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__icons-brand-title {
+		flex-basis: 100%;
+		margin: 1.3rem 5px 0.7rem;
+		font-size: 1.3rem;
+	}
+
+	&__icon-presentation {
+		flex-basis: 100%;
+		flex-grow: 1;
+		padding: 10px;
+		margin: 5px;
+		font-size: 1.2rem;
+		line-height: 1;
+		background-color: white;
+		border-radius: 4px;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	@media screen and (min-width: 992px) {
+		&__spoiler--comment_disabled &__icon-presentation {
+			flex-basis: calc(50% - 31px);
+			max-width: calc(50% - 31px);
+		}
+
+		&__icon-presentation {
+			flex-basis: calc(33% - 30px);
+			max-width: calc(33% - 27px);
+		}
+	}
+
+	// Licenses.
+	&__licenses-title {
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+		margin-left: 0.2rem;
+		font-size: 1.5rem;
+		line-height: 1.4;
+	}
+
+	&__license {
+		padding: 16px;
+		margin: 16px 0;
+		background-color: #fff;
+		border-radius: 4px;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	&__license-title {
+		margin: 2px 0 1rem;
+		font-size: 1.2rem;
+	}
+
+	&__license-link {
+		font-weight: bold;
+	}
+
+	&__license-description {
+		margin-bottom: 1rem;
+	}
+}

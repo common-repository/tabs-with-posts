@@ -1,0 +1,48 @@
+// Mixin class that all tabs should implement.
+
+@mixin twrp-tab-clean-style($block-name) {
+	@extend .twrp-reset-box;
+
+	&__btns-wrapper {
+		@extend .twrp-reset-box;
+
+		display: flex;
+		list-style-type: none;
+
+		& + #{$block-name}__contents-wrapper {
+			padding-top: var(--twrp-contents-wrapper-padding-top);
+		}
+	}
+
+	&__btn-item {
+		@extend .twrp-reset-box;
+
+		display: inline-block;
+	}
+
+	&__btn {
+		@extend .twrp-reset-box;
+		@extend .twrp-reset-anchor;
+
+		font-size: var(--twrp-tab-button-font-size);
+		line-height: var(--twrp-tab-button-line-height);
+		text-decoration: none;
+	}
+
+	&__contents-wrapper {
+		@extend .twrp-reset-box;
+	}
+
+	&__content {
+		@extend .twrp-reset-box;
+
+		display: grid;
+		grid-template-columns: var(--twrp-grid-columns);
+		grid-gap: var(--twrp-grid-gap);
+	}
+
+	// Prevent flash of content, by displaying only the first tab.
+	&__content:not([role]) ~ #{$block-name}__content {
+		display: none;
+	}
+}

@@ -1,0 +1,31 @@
+.twrp-i {
+	position: relative;
+	top: 0.08em;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.1em;
+	line-height: 1;
+	fill: currentColor;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* Icon domain fix. */
+
+/* Vertical align fix */
+
+.twrp-i--va-1 {
+	top: 0.08em;
+}
+
+.twrp-i--va-15 {
+	top: 0.13em;
+}
+
+.twrp-i--va-2 {
+	top: 0.17em;
+}

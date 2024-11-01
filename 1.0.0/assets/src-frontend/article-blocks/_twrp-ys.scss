@@ -1,0 +1,128 @@
+.twrp-ys {
+	@include twrp-block-mixin;
+
+	@extend .twrp-reset-box;
+
+	--twrp-title-font-size: 0.95rem;
+	--twrp-title-line-clamp: 2;
+	--twrp-meta-font-size: 0.8rem;
+
+	display: flex;
+
+	&__title {
+		@extend .twrp-reset-box;
+
+		margin-top: -0.1em;
+		margin-bottom: 0.4rem;
+		color: var(--twrp-text-color);
+	}
+
+	&__thumbnail-container {
+		position: relative;
+		flex: 0 0 var(--twrp-yt-thumbnail-width);
+		margin-right: var(--twrp-yt-thumbnail-right-margin);
+	}
+
+	&__thumbnail-wrapper {
+		height: 100%;
+	}
+
+	/* stylelint-disable-next-line block-no-empty */
+	&__thumbnail {}
+
+	&__thumbnail-meta-wrapper {
+		@extend .twrp-reset-box;
+
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		align-items: baseline;
+		width: 100%;
+	}
+
+	&__right-presentation-wrapper {
+		@extend .twrp-reset-box;
+
+		flex-grow: 1;
+		width: calc(calc(100% - var(--twrp-yt-thumbnail-width)) - var(--twrp-yt-thumbnail-right-margin));
+	}
+
+	&__meta {
+		@extend .twrp-reset-box;
+
+		display: inline-block;
+		flex-shrink: 0;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&__meta--5,
+	&__meta--6 {
+		padding: 0 0.4em;
+		color: var(--twrp-meta-thumbnail-over-color);
+		background-color: var(--twrp-meta-thumbnail-over-background-color);
+	}
+
+	&__meta--5 {
+		border-top-right-radius: var(--twrp-border-radius);
+	}
+
+	&__meta--6 {
+		margin-left: auto;
+		border-top-left-radius: var(--twrp-border-radius);
+	}
+
+	&__first-meta-wrapper,
+	&__second-meta-wrapper {
+		@extend .twrp-reset-box;
+
+		display: flex;
+		align-items: baseline;
+
+		& > * {
+			margin-right: 0.6em;
+		}
+
+		& > *:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__author,
+	&__date,
+	&__category {
+		flex-shrink: 1;
+		text-overflow: ellipsis;
+	}
+
+	// If an author meta is displayed alongside a date or category, then shrink
+	// only the author, If the category and date are displayed, then shrink only
+	// the category. If all 3 are displayed, shrink the author only.
+	// author-date: shrink author, date not excess 60%.
+	// author-category: shrink author, category not excess 60%
+	// category-date: shrink category, date not excess 60%
+	// all 3, shrink author, date and category not excess 40% each.
+	[class*="twrp-ys__flex-meta-wrapper--"][class*="author"] .twrp-ys__date,
+	[class*="twrp-ys__flex-meta-wrapper--"][class*="author"] .twrp-ys__category,
+	[class*="twrp-ys__flex-meta-wrapper--"]:not([class*="author"])[class*="category"] .twrp-ys__date{
+		flex-shrink: 0;
+		max-width: 60%;
+	}
+	[class*="twrp-ys__flex-meta-wrapper--"][class*="author"][class*="category"][class*="date"] .twrp-ys__date,
+	[class*="twrp-ys__flex-meta-wrapper--"][class*="author"][class*="category"][class*="date"] .twrp-ys__category {
+		flex-shrink: 0;
+		max-width: 40%;
+	}
+
+	&__link {
+		@extend .twrp-reset-box;
+		@extend .twrp-reset-anchor;
+
+		&:hover,
+		&:focus {
+			.twrp-ys__title {
+				color: var(--twrp-accent-color);
+			}
+		}
+	}
+}

@@ -1,0 +1,193 @@
+.twrp-ms {
+	@include twrp-block-mixin;
+
+	@extend .twrp-reset-box;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	&__title {
+		@extend .twrp-reset-box;
+
+		position: relative;
+		margin-bottom: 0.35rem;
+		color: var(--twrp-text-color);
+	}
+
+	&__thumbnail-container {
+		@extend .twrp-reset-box;
+
+		position: relative;
+	}
+
+	/* stylelint-disable-next-line block-no-empty */
+	&__thumbnail-wrapper {}
+
+	/* stylelint-disable-next-line block-no-empty */
+	&__thumbnail {}
+
+	&__top-meta-wrapper {
+		@extend .twrp-reset-box;
+
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		display: flex;
+		align-items: baseline;
+		width: 100%;
+		padding: 8px;
+		transition: opacity 250ms ease;
+
+		.twrp-ms__meta {
+			display: block;
+			margin: 0;
+		}
+	}
+
+	&__top-left-meta, &__top-right-meta {
+		@extend .twrp-reset-box;
+
+		flex-shrink: 1;
+		margin-right: 0.5rem;
+		overflow: hidden;
+	}
+
+	&__top-right-meta {
+		flex-shrink: 0;
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	&__bot-meta-wrapper{
+		@extend .twrp-reset-box;
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 2px 8px;
+		background-color: rgba(0,0,0,0.7);
+		transition: opacity 250ms ease;
+	}
+
+	&__first-meta-wrapper,
+	&__second-meta-wrapper {
+		@extend .twrp-reset-box;
+
+		display: flex;
+		align-items: baseline;
+
+		.twrp-ms__meta:last-child {
+			margin-right: 0;
+		}
+	}
+
+	/* stylelint-disable-next-line */
+	&__meta {
+		@extend .twrp-reset-box;
+
+		display: inline-block;
+		flex-shrink: 0;
+		margin-right: 0.5rem;
+		overflow: hidden;
+		color: #eee;
+		white-space: nowrap;
+	}
+
+	&__meta--7, &__meta--8 {
+		padding: 2px 8px;
+		background-color: rgba(0,0,0,0.7);
+		border-radius: var(--twrp-border-radius);
+	}
+
+	&__author,
+	&__date,
+	&__category {
+		flex-shrink: 1;
+		text-overflow: ellipsis;
+	}
+
+	// If an author meta is displayed alongside a date or category, then shrink
+	// only the author, If the category and date are displayed, then shrink only
+	// the category. If all 3 are displayed, shrink the author only.
+	// author-date: shrink author, date not excess 60%.
+	// author-category: shrink author, category not excess 60%
+	// category-date: shrink category, date not excess 60%
+	// all 3, shrink author, date and category not excess 40% each.
+	[class*="twrp-ms__flex-meta-wrapper--"][class*="author"] .twrp-ms__date,
+	[class*="twrp-ms__flex-meta-wrapper--"][class*="author"] .twrp-ms__category,
+	[class*="twrp-ms__flex-meta-wrapper--"]:not([class*="author"])[class*="category"] .twrp-ms__date{
+		flex-shrink: 0;
+		max-width: 60%;
+	}
+	[class*="twrp-ms__flex-meta-wrapper--"][class*="author"][class*="category"][class*="date"] .twrp-ms__date,
+	[class*="twrp-ms__flex-meta-wrapper--"][class*="author"][class*="category"][class*="date"] .twrp-ms__category {
+		flex-shrink: 0;
+		max-width: 40%;
+	}
+
+	// Hover, Focus state
+	&__link {
+		@extend .twrp-reset-box;
+		@extend .twrp-reset-anchor;
+
+		margin-top: auto;
+
+		&:hover,
+		&:focus {
+			.twrp-ms__title {
+				color: var(--twrp-accent-color);
+			}
+		}
+	}
+
+	// Show excerpt on hover.
+	&__excerpt-container {
+		@extend .twrp-reset-box;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		padding: 10px 8px 10px 10px;
+		font-size: 0.9rem;
+		color: #eee;
+		background-color: rgba(0,0,0,0.7);
+		opacity: 0;
+		transition: var(--twrp-opacity-transition);
+	}
+
+	&__excerpt {
+		@extend .twrp-reset-box;
+
+		display: -webkit-box;
+		max-height: 100%;
+		-webkit-line-clamp: var(--twrp-excerpt-max-lines-shown);
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		word-break: break-word;
+	}
+
+	&__excerpt-on-hover:hover,
+	&__excerpt-on-hover:focus,
+	&__link:hover ~ .twrp-ms__excerpt-on-hover,
+	&__link:focus ~ .twrp-ms__excerpt-on-hover {
+		.twrp-ms__top-meta-wrapper {
+			opacity: 0;
+		}
+
+		.twrp-ms__bot-meta-wrapper {
+			opacity: 0;
+		}
+
+		.twrp-ms__excerpt-container {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.twrpb-general-radio {
+	&__title {
+		margin-bottom: 0.5rem;
+		font-size: 1.1rem;
+		font-weight: 500;
+		line-height: 1.3;
+		color: #333;
+	}
+
+	&__description {
+		margin-bottom: 0.6rem;
+	}
+
+	&__checkboxes {
+		//margin: 0 0.3rem;
+	}
+
+	&__selection {
+		margin-right: 0.5rem;
+	}
+
+	&__selection label {
+		vertical-align: 0;
+	}
+}

@@ -1,0 +1,86 @@
+.twrpb-button {
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 0 1rem;
+	font-size: 0.9rem;
+	line-height: 2;
+	color: white;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: bottom;
+	cursor: pointer;
+	background: rgb(10, 105, 104);
+	background: linear-gradient(-45deg, #03aab3, #005f79, #03aab3, #005f79);
+	background-size: 400% 400%;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	opacity: 0.9;
+	transition: opacity 200ms ease-in;
+	-webkit-appearance: none;
+
+	&--save {
+		background: #078a00;
+		background: linear-gradient(-45deg, #5baf08, #066c00, #5baf08, #066c00);
+		background-size: 400% 400%;
+	}
+
+	&--delete {
+		background: #bd0000;
+		background: linear-gradient(-45deg, #eb0101, #910000, #eb0101, #910000);
+		background-size: 400% 400%;
+		opacity: 0.75;
+	}
+
+	&--small {
+		padding: 0.1rem 0.5rem;
+		font-size: 0.8rem;
+		line-height: 1.4;
+	}
+
+	&--large {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+
+	&--disabled {
+		cursor: wait;
+		opacity: 0.6 !important;
+	}
+
+	&:hover,
+	&:focus {
+		color: white;
+		outline: 0;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+		opacity: 1;
+		animation: gradient 5s ease-in infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px #007cba;
+	}
+
+	&--save:focus {
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px #008510;
+	}
+
+	&--delete:focus {
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px #c70000;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}

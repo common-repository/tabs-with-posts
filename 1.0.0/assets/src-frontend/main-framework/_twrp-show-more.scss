@@ -1,0 +1,26 @@
+.twrp-show-more {
+	@extend .twrp-reset-box;
+
+	grid-column: 1/-1;
+
+	&__btn {
+		@extend .twrp-reset-box;
+		@extend .twrp-reset-anchor;
+		@extend .twrp-reset-inherited-and-more;
+
+		padding: 0.2rem 0.6rem;
+		color: var(--twrp-accent-best-text-color);
+		background-color: var(--twrp-accent-color);
+		border-radius: var(--twrp-border-radius);
+
+		&:hover,
+		&:focus {
+			background-color: var(--twrp-darker-accent-color);
+		}
+	}
+}
+
+.twrp-show-more ~ .twrp-block,
+.twrp-show-more ~ .twrp-show-more {
+	display: none !important;
+}

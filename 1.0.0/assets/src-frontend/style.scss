@@ -1,0 +1,74 @@
+// Variables:
+:root {
+	// Variables inserted dynamically via PHP:
+	// --twrp-background-color
+	// --twrp-secondary-background-color
+
+	// --twrp-text-color
+	// --twrp-disabled-text-color
+
+	// --twrp-accent-color
+	// --twrp-darker-accent-color
+	// --twrp-lighter-accent-color
+	// --twrp-accent-best-text-color
+
+	// --twrp-border-color
+	// --twrp-secondary-border-color
+	// --twrp-border-radius
+
+	// --twrp-outline-accent-color
+
+	// --twrp-tab-button-font-size: 1.05rem;
+
+	// Article Block variables.
+	--twrp-artblock-max-width: 400px;
+	--twrp-title-font-size: 1.1rem;
+	--twrp-title-line-height: 1.4;
+	--twrp-title-line-clamp: 3;
+	--twrp-meta-font-size: 0.92rem;
+	--twrp-meta-line-height: 1.5;
+	--twrp-meta-thumbnail-over-background-color: rgba(0, 0, 0, 0.7);
+	--twrp-meta-thumbnail-over-color: white;
+
+	// Tabs Variables.
+	--twrp-tab-button-line-height: 1.5;
+	--twrp-contents-wrapper-padding-top: 10px;
+	--twrp-grid-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+	--twrp-grid-gap: 16px;
+
+	// Article Block & Tabs Variables.
+	--twrp-default-component-transition: color 300ms ease, background-color 250ms ease, border-color 250ms ease, font-size 250ms ease, margin 250ms ease, padding 250ms ease, width 250ms ease, height 250ms ease, box-shadow 250ms ease;
+	--twrp-opacity-transition: opacity 250ms ease;
+	--twrp-excerpt-max-lines-shown: 5;
+
+	// Article Block Style Variables:
+	--twrp-yt-thumbnail-width: 120px;
+	--twrp-yt-thumbnail-right-margin: 0.5rem;
+}
+
+body:not(#twrpS) {
+	@import '../src-common/style';
+	@import 'main-mixins/twrp-reset';
+
+	// Import the tab styles.
+	@import 'tabs/mixin-twrp-tab-clean-style.scss';
+	@import 'tabs/twrp-tab-ts.scss';
+	@import 'tabs/twrp-tab-bs.scss';
+
+	// Article Blocks Styles
+	@import 'article-blocks/twrp-block-mixin';
+	@import 'article-blocks/twrp-ss';
+	@import 'article-blocks/twrp-ys';
+	@import 'article-blocks/twrp-ms';
+
+	// Import other helping classes.
+	@import 'main-framework/twrp-main';
+	@import 'main-framework/twrp-link-expand';
+
+	// Block padding must override the thumbnail.
+	@import 'main-framework/twrp-thumbnail';
+	@import 'main-framework/twrp-widget-padding';
+	@import 'main-framework/twrp-show-more';
+	@import 'main-framework/twrp-rating-count';
+	@import 'main-framework/twrp-widget-load-via-ajax-failed';
+}

@@ -1,0 +1,2876 @@
+# Copyright (C) 2021 Bradatan Dorin
+# This file is distributed under the same license as the Tabs with Recommended Posts (Widget) plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tabs with Recommended Posts (Widget) 0.9.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tabs-with-posts\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-28T16:48:56+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: tabs-with-posts\n"
+
+#. Plugin Name of the plugin
+msgid "Tabs with Recommended Posts (Widget)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Widget to show posts(latest/most viewed/best rated/custom), with a very solid and nice design. Very user-friendly to customize and get started."
+msgstr ""
+
+#. Author of the plugin
+msgid "Bradatan Dorin"
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:131
+msgctxt "backend"
+msgid "When putting a custom number of days, do not forget to check the last option and to put a number of days."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:135
+msgctxt "backend"
+msgid "If you want, only one setting can be set(either \"after\" or \"before\"). For example to display all posts after 2020, set only \"after\": 01/01/2020."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:139
+msgctxt "backend"
+msgid "The name will be visible ONLY in the admin screen."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:143
+msgctxt "backend"
+msgid "You can remove keywords by placing \"-\" in front of them: \"pillow -sofa\". Leave empty to not apply."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:147
+msgctxt "backend"
+msgid "You have searched for a very small keyword, this can be a mistake. The query will work and include the search result whatsoever."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:151
+msgctxt "backend"
+msgid "Some theme/plugins can alter any WP database query, modifying it's results in unexpected ways. Fortunately, with this setting we can suppress/allow them all together."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:155
+msgctxt "backend"
+msgid "By default, you have only one choice here(\"Published\"), so usually you don't want to modify this setting."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:159
+msgctxt "backend"
+msgid "Ordering by post ID is not usually a good choice. If you don't know what a post ID is, then you maybe want to order by date, which is more efficient."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:163
+msgctxt "backend"
+msgid "When ordering by comments, is good to order by something else secondarily(like date), in case the number of comments are equal between posts."
+msgstr ""
+
+#. translators: %1$s and %2$s are HTML tags for a link to the documentation.
+#: inc/Admin/Helpers/Remember_Note.php:168
+msgctxt "backend"
+msgid "Don't forget to add some search terms, also, there is a technical explanation in the %1$s documentation%2$s of how ordering by search works."
+msgstr ""
+
+#. translators: %1$s and %2$s are HTML tags for a link to the documentation.
+#: inc/Admin/Helpers/Remember_Note.php:173
+msgctxt "backend"
+msgid "Don't forget to add a meta value. Do not confuse sorting alphabetically with numerically, in %1$s documentation%2$s there is an explanation between the two."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:177
+msgctxt "backend"
+msgid "Don't forget to add posts to the \"Included Posts\" setting, and sort them how you want."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:181
+msgctxt "backend"
+msgid "Depending on how the plugin is ordering, either \"Suppress Filters\" or \"Meta Settings\" or both options are overwritten."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:185
+msgctxt "backend"
+msgid "This setting is a filter, and the posts added here can be filtered by other options. For example if a post(of type \"Post\") is added here, and in the Post Types Setting only \"Pages\" setting is selected, then the post will not be shown because it is filtered out by other setting."
+msgstr ""
+
+#. translators: %1$s and %2$s are HTML tags for a link to the documentation.
+#: inc/Admin/Helpers/Remember_Note.php:190
+msgctxt "backend"
+msgid "This is a JSON setting, will overwrite any other settings, used for more advanced settings that are not usually worth making a graphical settings for them. You can see in %1$s documentation%2$s an example. If you want to use PHP, then use the filters to overwrite a specific query(examples in documentation)."
+msgstr ""
+
+#. translators: The tags %1$s and %2$s will be replaced with a HTML link tag.
+#: inc/Admin/Helpers/Remember_Note.php:195
+msgctxt "backend"
+msgid "The JSON you entered is invalid and will not be applied. If you can't detect where the error might be, you can copy the text into an %1$s online checker%2$s for more details."
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:246
+msgctxt "backend"
+msgid "Note:"
+msgstr ""
+
+#: inc/Admin/Helpers/Remember_Note.php:255
+msgctxt "backend"
+msgid "Warning:"
+msgstr ""
+
+#: inc/Admin/Settings_Menu.php:81
+msgctxt "backend"
+msgid "Tabs with Recommended Posts - Settings"
+msgstr ""
+
+#: inc/Admin/Settings_Menu.php:82
+#: inc/TWRP_Widget.php:54
+msgctxt "backend"
+msgid "Tabs with Recommended Posts"
+msgstr ""
+
+#: inc/Admin/Settings_Menu.php:134
+msgctxt "backend"
+msgid "Contact Us"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Additional_Plugins_Supported.php:22
+msgctxt "backend documentation"
+msgid "Additional Plugins Support & Info"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Additional_Plugins_Supported.php:24
+msgctxt "backend documentation"
+msgid "This plugin also supports the \"Yoast SEO\" plugin to retrieve the main category and to display it."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Additional_Plugins_Supported.php:27
+msgctxt "backend, documentation"
+msgid "This widget supports all page cache plugins."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Additional_Plugins_Supported.php:31
+msgctxt "backend, documentation"
+msgid "This plugin supports all multi-language plugins that can translate each widget individually."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Additional_Plugins_Supported.php:35
+msgctxt "backend, documentation"
+msgid "This plugin does NOT support Likes/Dislikes of \"WP-PostRatings\" Rating plugin."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:22
+msgctxt "backend documentation"
+msgid "Article Blocks(Styles)"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:25
+msgctxt "backend, documentation"
+msgid "The article blocks, or styles, are a way to display a post."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:29
+msgctxt "backend, documentation"
+msgid "Each tab can have a different article block, but for consistency, it's good to make them all look the same."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:33
+msgctxt "backend, documentation"
+msgid "Each article block has a number of spots where a post meta could be inserted, and a meta could be inserted in any of these spots. Using this, you can create a unique way to display a post, with the most important information first."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:37
+msgctxt "backend, documentation"
+msgid "Just be careful to not overdo it, by putting a lot of meta and style them too hard."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:41
+msgctxt "backend, documentation"
+msgid "Another tip which I suggest is this: There are 2 types of meta, long ones: author, date, category. and short ones: views, comments, rating. Try to not use 3 or 2(depending on styles) long meta one after another, when you might not have enough space. By combining one or two long styles, you make the long ones not shrink when they don't have space."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:45
+msgctxt "backend, documentation"
+msgid "All the thumbnails of the styles are loading lazy(only if in view)."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Article_Blocks_Docs.php:49
+msgctxt "backend, documentation"
+msgid "You can overwrite an article block(style) template in your theme/child-theme by creating a file \"twrp-{style-name}.php\" or a file in a folder \"twrp-templates/style-name.php\" where the style-name is the name of the style(look on this plugin folder for example)."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:22
+msgctxt "backend, documentation"
+msgid "Cache"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:25
+msgctxt "backend, documentation"
+msgid "To make the widgets faster, this plugin uses a database cache to not generate the widget every time a page is loaded."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:29
+msgctxt "backend, documentation"
+msgid "The cache implementation is almost a must since the interrogation of the database is expensive, and also the additional plugins for views/ratings interrogate the database again for every post."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:33
+msgctxt "backend, documentation"
+msgid "A widget with 4 tabs, will be generated in 500 milliseconds average if the cache is off, if the setting is on it will take only 3ms(depending on database connection) average. According to Google, 53% of mobile users leave the page if it takes more than 3 seconds to load."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:37
+msgctxt "backend, documentation"
+msgid "The plugin cache is highly recommended to be ON all the time, even if you use another external plugin to cache pages. If you use another plugin to cache pages, you must set the option to load the widget via AJAX."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:41
+msgctxt "backend, documentation"
+msgid "The cache is generated in a background async process, so no user will feel any page load impact, since the widget is not generated when the page is loaded."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:45
+msgctxt "backend, documentation"
+msgid "The cache will be automatically refreshed at an interval of time(to refresh views and rating), a setting that the user can change."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:49
+msgctxt "backend, documentation"
+msgid "If you don't see views/ratings change immediately, don't panic and be patient, the widget will be refreshed when the next visitor passes the minutes mark."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:53
+msgctxt "backend, documentation"
+msgid "The widget will also force a refresh at some specific events, these include: any post added/updated/removed, any term added/updated/removed, any plugin activated/deactivated, WordPress Updates, ... etc."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Cache_Docs.php:57
+msgctxt "backend, documentation"
+msgid "The database table with the cache will be automatically removed when the plugin is deleted."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/CSS_Docs.php:22
+msgctxt "backend documentation"
+msgid "CSS"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/CSS_Docs.php:24
+msgctxt "backend, documentation"
+msgid "The one thing that I want to mention about the CSS is that all the CSS is enclosed into body:not(#twrpS) selectors, usually following by the class that the style apply. The meaning of this selector is to overwrite theme CSS like \".widget .item a\" in a simple manner(an id tag overrides all classes tags), while not using !important tags."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/CSS_Docs.php:27
+msgctxt "backend, documentation"
+msgid "When changing the CSS, try to change variables first. CSS variables from this plugin begin with \"--twrp...\"."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:27
+msgctxt "backend documentation"
+msgid "Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:30
+msgctxt "backend documentation"
+msgid "This plugin comes with a lot of icons possibilities. When selecting a plugin, you will see the brand of the plugin, the icon name and the style(filled, outlined, ... etc). If there is a brand that is not included in this plugin, you can send a request to add that icon pack."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:38
+msgctxt "backend documentation"
+msgid "The first thing when selecting icons you must consider(In my opinion) is to look exactly(or at least similar) with other theme/plugins icons. You can select icons from different brands, the icons are made to be aligned perfectly with each other."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:46
+msgctxt "backend documentation"
+msgid "In the frontend of the website, only the selected icons are included, making all the icons code very small(1-2kb GZipped)."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:54
+msgctxt "backend documentation"
+msgid "Because the code is in svg format, to use the icons with an ID reference, the svg icons are included in a div, prepended to the \"body\" HTML element."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:62
+msgctxt "backend documentation"
+msgid "The icons can be included either inline, or via a file. The recommended way(and default) is to include them inline, because the page will load faster, and also they are included only if the tabs are displayed. The option to include them via a file is to let the browser cache them, to not be downloaded every time, but is not worth, since they are very small in size, and an additional request will rather slow the page down(trust me)."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:70
+msgctxt "backend documentation"
+msgid "If an icon is not displayed, go to \"General Settings\" tab, change the setting of an icon, and save the settings. The icons are generated when the save button is pressed and at least an icon setting is changed(you can revert back to the icon after), or when the plugin is activated."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:78
+msgctxt "backend documentation"
+msgid "Check the spoilers bellow to see all available icons:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:95
+msgctxt "backend"
+msgid "All icons reference"
+msgstr ""
+
+#. translators: %s: icon category. Ex: "Author Icons" or "Date Icons"
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:100
+msgctxt "backend"
+msgid "Toggle \"%s\" Spoiler"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:170
+msgctxt "backend documentation"
+msgid "Author Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:175
+msgctxt "backend documentation"
+msgid "Date Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:180
+msgctxt "backend documentation"
+msgid "Category Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:185
+msgctxt "backend documentation"
+msgid "Comment Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:190
+msgctxt "backend documentation"
+msgid "Comment Disabled Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:195
+msgctxt "backend documentation"
+msgid "Views Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Icons_Documentation.php:200
+msgctxt "backend documentation"
+msgid "Rating Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:31
+msgctxt "backend, documentation"
+msgid "MIT License"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:32
+msgctxt "backend, documentation"
+msgid "Apache License Version 2.0"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:33
+msgctxt "backend, documentation"
+msgid "GNU General Public License Version 3"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:34
+msgctxt "backend, documentation"
+msgid "IconMonstr License"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:35
+msgctxt "backend, documentation"
+msgid "Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0) License"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:36
+msgctxt "backend, documentation"
+msgid "Creative Commons Zero v1.0 Universal"
+msgstr ""
+
+#. translators: %1$s: icons brand name, %2$s: license name.
+#: inc/Admin/Tabs/Documentation/License_Display.php:39
+msgctxt "backend, documentation"
+msgid "%1$s Icons are published under \"%2$s\", which grant the permission to be included in this plugin. Some icons may be modified in scale(increased to the margin of svg view box) and alignment(centered in svg view box), to be uniform displayed with other icons."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:44
+msgctxt "backend, documentation"
+msgid "FontAwesome Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:52
+msgctxt "backend, documentation"
+msgid "Google Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:68
+msgctxt "backend, documentation"
+msgid "Foundation Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:92
+msgctxt "backend, documentation"
+msgid "Captain Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:100
+msgctxt "backend, documentation"
+msgid "Feather Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:108
+msgctxt "backend, documentation"
+msgid "Jam Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:116
+msgctxt "backend, documentation"
+msgid "Linea Icons"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:154
+msgctxt "backend, documentation"
+msgid "Licenses and external programs used"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/License_Display.php:190
+msgctxt "backend, documentation"
+msgid "License Link:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:52
+msgctxt "backend, documentation"
+msgid "Views plugin support"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:78
+msgctxt "backend, documentation"
+msgid "Rating plugin support"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:109
+msgctxt "backend"
+msgid "(Premium Only)"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:115
+msgctxt "backend, screen reader"
+msgid "Plugin avatar"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:122
+msgctxt "backend,"
+msgid "Author:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:127
+msgctxt "backend"
+msgid "Installed Version:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:133
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:594
+msgctxt "backend"
+msgid "Not Installed"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:140
+msgctxt "backend"
+msgid "Not Active"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:144
+msgctxt "backend"
+msgid "Used"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Plugin_Support_Docs.php:152
+msgctxt "backend"
+msgid "Tested versions:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:28
+msgctxt "backend, documentation"
+msgid "Tab Queries"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:31
+msgctxt "backend, documentation"
+msgid "In the tab queries, you can select what kinds of posts to display under one tab. Ex: Last Posts, Most Viewed, Post in a specific category... etc. You must add a tab query or more to use this plugin, give a name, and modify later if necessary. You can use a tab query in more than one widget."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:35
+msgctxt "backend, documentation"
+msgid "There are a lot of options of which you can create your own query, you can see how these work by applying a starter template, and modify from there, maybe add more post types, or exclude some categories... the number of possibilities is big."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:39
+msgctxt "backend, documentation"
+msgid "If not even then, in the last option you can add a JSON text, with the WP_Query arguments, that will overwrite all the above applied arguments, and if that isn't enough and you want to write in PHP, then the filter \"twrp_get_query_arguments_created\" where the first argument is an array with the WP_Query arguments(second is the tab query id) can do it for you."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:43
+msgctxt "backend, documentation"
+msgid "Below are some of the setting that might be confused, explained:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:46
+msgctxt "backend, documentation"
+msgid "Starting template setting"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:49
+msgctxt "backend, documentation"
+msgid "The starting templates are there to give users an insight of how the settings should work. By filling the most important ones, the user can then expand for them, changing other settings if needed."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:52
+msgctxt "backend, documentation"
+msgid "Name setting"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:55
+msgctxt "backend, documentation"
+msgid "Differentiate between tab queries, giving them a name. As written in the note below it, the name is for you to know what posts the tab is displaying, and is not displayed in the frontend."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:58
+msgctxt "backend, documentation"
+msgid "Post statuses setting"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:61
+msgctxt "backend, documentation"
+msgid "If not custom added, only \"Published\" should be shown, which is also the default value. There isn't much of doing here, the \"Scheduled\" status wasn't added because it may show unwanted posts, but below(at advance arguments) there is an explanation of how exactly to set to show only some scheduled posts. The \"private\" is also not an option here, because those are meant for administrators and editors, not for users."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:65
+msgctxt "backend, documentation"
+msgid "By writing the custom post statuses in the advanced query settings, you somehow realize that some unwanted posts might show to the users, and you become more carefully."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:68
+msgctxt "backend, documentation"
+msgid "Order of posts setting"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:71
+msgctxt "backend, documentation"
+msgid "There are 3 order options, you can use all 3 or none. Usually you must set something to be sure that what is displayed is what you want. The most common ordering is by date in descending order(to get last posts)."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:75
+msgctxt "backend, documentation"
+msgid "Because most of the ordering itself is pretty much self-documented by the name, below are just some of the settings that might have some quirks."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:79
+msgctxt "backend, documentation"
+msgid "Ordering by searching terms:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:80
+msgctxt "backend, documentation"
+msgid "Order by search terms in the following order: First, whether the entire sentence is matched. Second, if all the search terms are within the titles. Third, if any of the search terms appear in the titles. And, fourth, if the full sentence appears in the contents."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:84
+msgctxt "backend, documentation"
+msgid "Meta order:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:85
+msgctxt "backend, documentation"
+msgid "There are 2 meta ordering, alphabetically and numerically, it's pretty easy to choose correctly, if you have numbers choose numerically, otherwise alphabetically. If you chose alphabetically when you should choose numbers, then instead of ordering ascending by meta like this: 12, 45, 114, 324.. etc, it will order like this: 114, 12, 324, 45. I hope you get the idea, will compare by first different digit, not the number as a whole."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:89
+msgctxt "backend, documentation"
+msgid "Views order:"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:90
+msgctxt "backend, documentation"
+msgid "When ordering by views ordering, depending on how the plugin works, either the suppress filters or meta setting will be overwritten. The views plugin \"WP-PostViews\" by \"Lester 'GaMerZ' Chan\" will overwrite the meta setting, while the plugins by \"Digital Factory\" and \"a3Rev Software\" will overwrite the suppress filters option."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:93
+msgctxt "backend, documentation"
+msgid "Meta key setting"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:96
+msgctxt "backend, documentation"
+msgid "By changing this setting, you must know what is the meta key that you should modify, the meta value(shown if you have a comparator) is verified if it is a number, and either compared as a number, or as a string(and is added to either meta_value, or meta_value_num key)."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:99
+msgctxt "backend, documentation"
+msgid "Advanced query settings"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:102
+msgctxt "backend, documentation"
+msgid "With the last option setting, you can override entirely the query, or add things keys that are not found in the settings provided. These arguments are provided as a JSON transformed into a PHP array, and then merged to the previous arguments, replacing them if they are already defined. If you want to use the PHP directly, then use the \"twrp_get_query_arguments_created\" filter."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:106
+msgctxt "backend, documentation"
+msgid "Below is an example of how we choose to show only some scheduled posts. Keep in mind that some arguments are added by default, like \"no_found_rows\", \"ignore_sticky_posts\", or \"post_type\". But you can save the setting and check the debugger if the final arguments are what you wish for. The \"post__in\" posts are added as an extra measure, to not show unwanted(or all) scheduled posts. The \"perm\" (from permission) is added because is a best practice to always add this key when we modify \"post_status\" key, especially when we show private posts."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:120
+msgctxt "backend, documentation"
+msgid "Debug generated query settings"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Tab_Queries_Docs.php:123
+msgctxt "backend, documentation"
+msgid "After the save button, there is a button that lets you see the WP_Query array args created by the query. You can use this to check if you doubt about a setting, or just to make sure that is not the query that is wrong, and the posts retrieved are intended. Keep in mind that you can see some array keys not in official possible arguments, used by plugins to create their custom query."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Translations_Docs.php:22
+msgctxt "backend documentation"
+msgid "Translations"
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Translations_Docs.php:24
+msgctxt "backend, documentation"
+msgid "You can either translate this plugin by changing directly the localization strings, via a plugin like \"Loco Translate\", or use the options to translate the strings. By translating the localization strings(and not changing the options), you can have multiple languages on a website."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation/Translations_Docs.php:27
+msgctxt "backend, documentation"
+msgid "You should never translate the files in the plugin directory because these will be deleted when the plugin is updated."
+msgstr ""
+
+#: inc/Admin/Tabs/Documentation_Tab.php:86
+msgctxt "backend"
+msgid "Documentation"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:254
+msgctxt "backend"
+msgid "Display the date in relative format(Ex: 3 weeks ago)?"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:256
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:419
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:617
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:632
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:668
+#: inc/Admin/Tabs/General_Settings/General_Setting_Creator/General_Select_With_Switch_Setting.php:40
+msgctxt "backend"
+msgid "Yes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:257
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:420
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:618
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:633
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:669
+#: inc/Admin/Tabs/General_Settings/General_Setting_Creator/General_Select_With_Switch_Setting.php:41
+msgctxt "backend"
+msgid "No"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:275
+msgctxt "backend"
+msgid "Enter custom date format(leave empty for WordPress default setting):"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:277
+msgctxt "backend, date format"
+msgid "Ex: F j, Y"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:292
+msgctxt "backend"
+msgid "Select the default author icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:306
+msgctxt "backend"
+msgid "Select the default date icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:320
+msgctxt "backend"
+msgid "Select the default category icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:334
+msgctxt "backend"
+msgid "Select the default comments icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:351
+msgctxt "backend"
+msgid "Select the default disabled comments icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:357
+msgctxt "backend"
+msgid "Auto-select this icon(best-looking) based on the comment icon."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:373
+msgctxt "backend"
+msgid "Select the default views icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:402
+msgctxt "backend"
+msgid "Select the default rating pack icons:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:417
+msgctxt "backend"
+msgid "Include SVG icons inline?"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:432
+msgctxt "backend"
+msgid "Select the text color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:433
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:445
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:457
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:469
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:481
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:493
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:505
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:517
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:529
+msgctxt "backend"
+msgid "Click to change:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:444
+msgctxt "backend"
+msgid "Select the disabled text color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:456
+msgctxt "backend"
+msgid "Select the background color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:468
+msgctxt "backend"
+msgid "Select the secondary background color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:480
+msgctxt "backend"
+msgid "Select the accent color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:492
+msgctxt "backend"
+msgid "Select the darker accent color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:504
+msgctxt "backend"
+msgid "Select the lighter accent color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:516
+msgctxt "backend"
+msgid "Select the border color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:528
+msgctxt "backend"
+msgid "Select the secondary border color:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:540
+msgctxt "backend"
+msgid "Change the default border radius of elements:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:552
+msgctxt "backend"
+msgid "Change the default tab button font-size:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:570
+msgctxt "backend"
+msgid "Select an image to display if the post has no thumbnail:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:590
+msgctxt "backend"
+msgid "Select the YASR rating type that you wish this plugin to show in posts:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:600
+msgctxt "backend"
+msgid "Overall/Author Rating"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:601
+msgctxt "backend"
+msgid "Visitors Vote"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:602
+msgctxt "backend"
+msgid "Multiset Overall/Authors Vote"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:603
+msgctxt "backend"
+msgid "Multiset Visitors Vote"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:615
+msgctxt "backend"
+msgid "Fill the empty grid spaces with posts?"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:630
+msgctxt "backend"
+msgid "Enable widget cache?"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:646
+msgctxt "backend"
+msgid "After how many minutes the cache should refresh?"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:648
+msgctxt "backend"
+msgid "7 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:649
+msgctxt "backend"
+msgid "10 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:650
+msgctxt "backend"
+msgid "15 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:651
+msgctxt "backend"
+msgid "20 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:652
+msgctxt "backend"
+msgid "30 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:653
+msgctxt "backend"
+msgid "45 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:654
+msgctxt "backend"
+msgid "60 minutes"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:666
+msgctxt "backend"
+msgid "Load widgets dynamically, via Ajax? Set \"Yes\" if you use another plugin to cache pages."
+msgstr ""
+
+#. translators: %s is a translation of a string that an administrator can change.
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:687
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:709
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:731
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:753
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:775
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:797
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:819
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:842
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:865
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:888
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:911
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:934
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:958
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:981
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:1003
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:1025
+msgctxt "backend"
+msgid "Translation defaults to: \"%s\", additionally translated in the frontend website language."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:691
+msgctxt "backend"
+msgid "Enter the text to of the button to show more posts:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:713
+msgctxt "backend"
+msgid "Text to display as a title if post has no title:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:735
+msgctxt "backend"
+msgid "Descriptive text of the default thumbnail that is loaded when a post has no thumbnail:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:757
+msgctxt "backend"
+msgid "Relative date text:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:779
+msgctxt "backend"
+msgid "Enter the text to display when the widget fails to load via Ajax:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:801
+msgctxt "backend"
+msgid "Enter the text to display when a tab contains no posts:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:820
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:843
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:866
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:889
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:912
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:935
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:959
+msgctxt "backend"
+msgid "This text will be visible only to visually impaired users(or a screen reader)."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:824
+msgctxt "backend"
+msgid "Text to describe the author icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:847
+msgctxt "backend"
+msgid "Text to describe the date icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:870
+msgctxt "backend"
+msgid "Text to describe the views icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:893
+msgctxt "backend"
+msgid "Text to describe the rating icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:916
+msgctxt "backend"
+msgid "Text to describe the category icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:939
+msgctxt "backend"
+msgid "Text to describe the comments icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:963
+msgctxt "backend"
+msgid "Text to describe the \"comments disabled\" icon:"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:985
+msgctxt "backend"
+msgid "Abbreviation of a number for thousands."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:1007
+msgctxt "backend"
+msgid "Abbreviation of a number for millions."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Settings_Factory.php:1029
+msgctxt "backend"
+msgid "Abbreviation of a number for billions."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Setting_Creator/General_Image_Setting.php:31
+msgctxt "backend"
+msgid "Add image"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings/General_Setting_Creator/General_Image_Setting.php:32
+msgctxt "backend"
+msgid "Clear Image"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:21
+msgctxt "backend"
+msgid "General Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:43
+msgctxt "backend"
+msgid "If you are using a plugin that cache pages, you need to purge(delete) the page data after changing these settings."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:47
+msgctxt "backend"
+msgid "Color Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:62
+msgctxt "backend"
+msgid "Style Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:70
+msgctxt "backend"
+msgid "Date Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:78
+msgctxt "backend"
+msgid "Thumbnail Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:85
+msgctxt "backend"
+msgid "Icons Settings"
+msgstr ""
+
+#. translators: %1$s and %2$s are placeholder where HTML code will be inserted, as a link wrapper(going to another page). No translation words are inserted there. Just translate the whole sentence, and be sure the corresponding words are between %$1s and %2$s tags.
+#: inc/Admin/Tabs/General_Settings_Tab.php:93
+msgctxt "backend"
+msgid "Note: To see a long list with all the icons, please look at %1$s documentation icons reference %2$s."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:114
+msgctxt "backend"
+msgid "Cache Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:123
+msgctxt "backend"
+msgid "Waiting"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:124
+msgctxt "backend"
+msgid "Success"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:125
+msgctxt "backend"
+msgid "Failed"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:127
+msgctxt "backend"
+msgid "Refresh widget cache"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:134
+msgctxt "backend"
+msgid "Translation"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:136
+msgctxt "backend"
+msgid "Click to show/hide translations"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:140
+msgctxt "backend"
+msgid "The string below will override the translations. If you want the default translation(or you use another plugin), then leave these empty. If you have a multi language website, then use a plugin for string localization, like \"Loco Translate\"(Free)."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:166
+msgctxt "backend"
+msgid "Other Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:186
+#: inc/Admin/Tabs/Queries_Tab.php:328
+msgctxt "backend"
+msgid "Settings saved successfully."
+msgstr ""
+
+#: inc/Admin/Tabs/General_Settings_Tab.php:223
+#: inc/Admin/Tabs/Queries_Tab.php:370
+msgctxt "backend"
+msgid "Save Settings"
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:88
+msgctxt "backend"
+msgid "Tab Queries"
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:137
+msgctxt "backend"
+msgid "Are you sure that do you want to delete this query?"
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:149
+msgctxt "backend"
+msgid "Existing Queries:"
+msgstr ""
+
+#. translators: %s: plus dashicon html.
+#: inc/Admin/Tabs/Queries_Tab.php:211
+msgctxt "backend"
+msgid "%s Add New Query"
+msgstr ""
+
+#. translators: %s will be replaced with a name, or a list of names.
+#: inc/Admin/Tabs/Queries_Tab.php:247
+msgctxt "backend"
+msgid "The query/queries: %s cannot be displayed because an external plugin that is needed is not installed."
+msgstr ""
+
+#. translators: both %1$s and %2$s will be replaced with an anchor HTML tag, so the "documentation" word must be between them.
+#: inc/Admin/Tabs/Queries_Tab.php:251
+msgctxt "backend"
+msgid "See the %1$s documentation%2$s for supported rating/views plugins."
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:341
+msgctxt "backend"
+msgid "Query deleted successfully."
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:402
+msgctxt "backend"
+msgid "You must first save the query, then return here to see the arguments generated."
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:412
+msgctxt "backend"
+msgid "See WP_Query arguments generated"
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:416
+msgctxt "backend"
+msgid "These arguments are generated when this page is loaded, and does not live-change when a setting here is modified."
+msgstr ""
+
+#: inc/Admin/Tabs/Queries_Tab.php:432
+msgctxt "backend"
+msgid "< Back to the Queries Overview"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Existing_Table.php:29
+msgctxt "backend"
+msgid "Query Name"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Existing_Table.php:31
+msgctxt "backend"
+msgid "Actions"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Existing_Table.php:43
+msgctxt "backend"
+msgid "No queries yet"
+msgstr ""
+
+#. translators: %s: edit dashicon html.
+#: inc/Admin/Tabs/Query_Options/Existing_Table.php:67
+msgctxt "backend"
+msgid "%sEdit"
+msgstr ""
+
+#. translators: %s: delete dashicon html.
+#: inc/Admin/Tabs/Query_Options/Existing_Table.php:69
+msgctxt "backend"
+msgid "%sDelete"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Modify_Query_Settings.php:52
+msgctxt "backend"
+msgid "This will modify all the current settings to the specific template. Are you sure?"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Modify_Query_Settings.php:61
+msgctxt "backend"
+msgid "Start with a template:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Modify_Query_Settings.php:76
+msgctxt "backend"
+msgid "Apply template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Advanced_Arguments_Display.php:22
+msgctxt "backend"
+msgid "Advanced query settings"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Advanced_Arguments_Display.php:47
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:63
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:76
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:40
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Status_Display.php:39
+#: inc/Query_Generator/Query_Setting/Post_Order.php:61
+msgctxt "backend"
+msgid "Not applied"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Advanced_Arguments_Display.php:51
+msgctxt "backend"
+msgid "Apply settings"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:22
+msgctxt "backend"
+msgid "Filter by author"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:66
+msgctxt "backend"
+msgid "Include only posts with selected authors"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:69
+msgctxt "backend"
+msgid "Exclude posts with selected authors"
+msgstr ""
+
+#. translators: %s -> display name of the author.
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:110
+msgctxt "backend, accessibility text"
+msgid "remove author %s"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:119
+msgctxt "backend"
+msgid "No authors selected. You can search for an author and click the button to add."
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:165
+msgctxt "backend"
+msgid "Search for Author"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Author_Display.php:172
+msgctxt "backend"
+msgid "Add Author"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:23
+msgctxt "backend"
+msgid "Include/Exclude posts by categories"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:80
+msgctxt "backend"
+msgid "Include categories"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:84
+msgctxt "backend"
+msgid "Exclude categories"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:110
+msgctxt "backend"
+msgid "For each category selected include also all children categories."
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:138
+msgctxt "backend"
+msgid "An article should have:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:147
+msgctxt "backend"
+msgid "Minimum one selected category"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:150
+msgctxt "backend"
+msgid "All selected categories"
+msgstr ""
+
+#. translators: %s -> category name.
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:165
+msgctxt "backend, accessibility text"
+msgid "remove category %s"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:183
+msgctxt "backend"
+msgid "Selected categories:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:193
+msgctxt "backend"
+msgid "No categories added. Select a category and click the button to add."
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Categories_Display.php:248
+msgctxt "backend"
+msgid "Add Category To List"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:26
+msgctxt "backend"
+msgid "Meta key"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:54
+msgctxt "backend"
+msgid "Meta Name"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:55
+msgctxt "backend"
+msgid "Meta Value"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:59
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:50
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:60
+msgctxt "backend"
+msgid "Not Applied"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:60
+msgctxt "backend"
+msgid "Apply Meta"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:66
+msgctxt "backend"
+msgid "Meta Name:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:73
+msgctxt "backend"
+msgid "Meta Comparator:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Meta_Display.php:89
+msgctxt "backend"
+msgid "Meta Value:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Password_Protected_Display.php:21
+msgctxt "backend"
+msgid "Filter by password"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Password_Protected_Display.php:29
+msgctxt "backend"
+msgid "Not Applied (Posts with and without password)"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Password_Protected_Display.php:30
+msgctxt "backend"
+msgid "Only posts with password"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Password_Protected_Display.php:31
+msgctxt "backend"
+msgid "Only posts without password"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:21
+msgctxt "backend"
+msgid "Filter by comments"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:43
+msgctxt "backend"
+msgid "Bigger or equal than: >="
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:46
+msgctxt "backend"
+msgid "Less or equal than: <="
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:49
+msgctxt "backend"
+msgid "Equal"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:52
+msgctxt "backend"
+msgid "Not equal"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Comments_Display.php:60
+msgctxt "backend"
+msgid "Number of comments"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:22
+msgctxt "backend"
+msgid "Filter by date"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:54
+msgctxt "backend"
+msgid "Last period of time"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:58
+msgctxt "backend"
+msgid "Between points in time"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:105
+msgctxt "backend"
+msgid "Last 7 days"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:115
+msgctxt "backend"
+msgid "Last 30 days"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:125
+msgctxt "backend"
+msgid "This and last week (max 7-14 days)"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:135
+msgctxt "backend"
+msgid "This and last month (max 30-60 days)"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:145
+msgctxt "backend"
+msgid "This year"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:155
+msgctxt "backend"
+msgid "Last n days:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:163
+msgctxt "backend"
+msgid "Last number of days..."
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:204
+msgctxt "backend"
+msgid "After:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Date_Display.php:217
+msgctxt "backend"
+msgid "Before:"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Order_Display.php:22
+msgctxt "backend"
+msgid "Order of posts"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:24
+msgctxt "backend"
+msgid "Only Include/Exclude specific posts"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:63
+msgctxt "backend"
+msgid "Only these posts"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:66
+msgctxt "backend"
+msgid "Exclude these posts"
+msgstr ""
+
+#. translators: %s -> post name.
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:112
+msgctxt "backend, accessibility text"
+msgid "remove post %s"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:134
+msgctxt "backend"
+msgid "No posts selected. You can search for a post and click the button to add."
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:142
+msgctxt "backend"
+msgid "Post with no title"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:177
+msgctxt "backend"
+msgid "Search for a post"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Settings_Display.php:184
+msgctxt "backend"
+msgid "Add Post"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Status_Display.php:22
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Status_Display.php:42
+msgctxt "backend"
+msgid "Filter by post statuses"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Post_Types_Display.php:21
+msgctxt "backend"
+msgid "Post types to include"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Query_Name_Display.php:22
+msgctxt "backend"
+msgid "Name of the query"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Query_Name_Display.php:33
+msgctxt "backend"
+msgid "Ex: Related Posts"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Search_Display.php:22
+msgctxt "backend"
+msgid "Filter by search keywords"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Search_Display.php:50
+msgctxt "backend"
+msgid "Search keywords..."
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Sticky_Posts_Display.php:21
+msgctxt "backend"
+msgid "Sticky posts inclusion"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Sticky_Posts_Display.php:33
+msgctxt "backend"
+msgid "Do not bring the sticky posts first"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Sticky_Posts_Display.php:37
+msgctxt "backend"
+msgid "Bring the sticky posts to be first(at the top)"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Suppress_Filters_Display.php:22
+msgctxt "backend"
+msgid "Suppress other plugins/theme query filters"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Suppress_Filters_Display.php:39
+msgctxt "backend"
+msgid "Suppress the filters"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Settings_Display/Suppress_Filters_Display.php:42
+msgctxt "backend"
+msgid "Do not suppress the filters"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:54
+msgctxt "backend"
+msgid "Last Posts Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:55
+msgctxt "backend"
+msgid "Most Commented Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:56
+msgctxt "backend"
+msgid "Random Posts Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:57
+msgctxt "backend"
+msgid "This Week Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:58
+msgctxt "backend"
+msgid "Most Viewed Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:59
+msgctxt "backend"
+msgid "Best Rated Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:60
+msgctxt "backend"
+msgid "Most Rated Template"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:107
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:126
+msgctxt "backend"
+msgid "Last Posts"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:150
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:176
+msgctxt "backend"
+msgid "Most Commented"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:203
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:222
+msgctxt "backend"
+msgid "Random Posts"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:246
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:270
+msgctxt "backend"
+msgid "This Week"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:295
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:316
+msgctxt "backend"
+msgid "Most Viewed"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:339
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:360
+msgctxt "backend"
+msgid "Best Rated"
+msgstr ""
+
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:383
+#: inc/Admin/Tabs/Query_Options/Query_Templates.php:404
+msgctxt "backend"
+msgid "Most Rated"
+msgstr ""
+
+#. translators: The <b>, </b>, and <br /> tag is a HTML tag and is good to remain there(only these tags are allowed).
+#: inc/Admin/TWRP_Widget/Widget_Form.php:93
+msgctxt "backend"
+msgid "No queries created. You need to select from right menu: <br /><b> \"Settings\" -> \"Tabs With Recommended Posts\" (Submenu).</b><br /> Then navigate to: <br /><b> \"Post Queries\" (Tab) -> \"Add Query\".</b>"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:196
+msgctxt "backend"
+msgid "Add tab:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:208
+msgctxt "backend"
+msgid "Add"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:217
+msgctxt "backend"
+msgid "Failed to add tab. Something went wrong, try refreshing the page."
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:265
+msgctxt "backend"
+msgid "Delete"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:266
+msgctxt "backend"
+msgid "Delete this tab"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:270
+msgctxt "backend"
+msgid "This tab will not be displayed, because the needed plugins are not installed."
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:283
+msgctxt "backend"
+msgid "Tab Settings:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:296
+msgctxt "backend"
+msgid "Post settings:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:327
+msgctxt "backend"
+msgid "Tab button text:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:332
+msgctxt "backend"
+msgid "Display tab title"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:359
+msgctxt "backend"
+msgid "Select a style to display:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:446
+msgctxt "backend"
+msgid "Number of posts:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:461
+msgctxt "backend"
+msgid "Number of posts per page:"
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:472
+msgctxt "backend"
+msgid "Make all the tabs look the same."
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:485
+msgctxt "backend"
+msgid "Add horizontal padding to the widget."
+msgstr ""
+
+#: inc/Admin/TWRP_Widget/Widget_Form.php:508
+msgctxt "backend"
+msgid "Select the style of the tab buttons:"
+msgstr ""
+
+#: inc/Article_Block/Article_Block.php:277
+msgctxt "backend"
+msgid "Change component CSS:"
+msgstr ""
+
+#: inc/Article_Block/Article_Block.php:300
+msgctxt "backend"
+msgid "Click to show/hide the meta locations"
+msgstr ""
+
+#: inc/Article_Block/Article_Block.php:304
+msgctxt "backend"
+msgid "Image showing where the meta are placed."
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:35
+msgctxt "backend"
+msgid "Modern Style"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:100
+#: inc/Article_Block/Blocks/Simple_Article.php:76
+#: inc/Article_Block/Blocks/Youtube_Article.php:93
+msgctxt "backend"
+msgid "Title"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:113
+msgctxt "backend"
+msgid "Meta Wrapper"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:126
+#: inc/Article_Block/Blocks/Simple_Article.php:89
+#: inc/Article_Block/Blocks/Youtube_Article.php:117
+msgctxt "backend"
+msgid "Meta 1"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:139
+#: inc/Article_Block/Blocks/Simple_Article.php:102
+#: inc/Article_Block/Blocks/Youtube_Article.php:130
+msgctxt "backend"
+msgid "Meta 2"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:152
+#: inc/Article_Block/Blocks/Simple_Article.php:115
+#: inc/Article_Block/Blocks/Youtube_Article.php:143
+msgctxt "backend"
+msgid "Meta 3"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:165
+#: inc/Article_Block/Blocks/Simple_Article.php:128
+#: inc/Article_Block/Blocks/Youtube_Article.php:156
+msgctxt "backend"
+msgid "Meta 4"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:178
+#: inc/Article_Block/Blocks/Simple_Article.php:141
+#: inc/Article_Block/Blocks/Youtube_Article.php:169
+msgctxt "backend"
+msgid "Meta 5"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:191
+#: inc/Article_Block/Blocks/Simple_Article.php:154
+#: inc/Article_Block/Blocks/Youtube_Article.php:182
+msgctxt "backend"
+msgid "Meta 6"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:204
+msgctxt "backend"
+msgid "Meta 7"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:217
+msgctxt "backend"
+msgid "Meta 8"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:228
+msgctxt "backend"
+msgid "Excerpt"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Modern_Article.php:351
+msgctxt "backend"
+msgid "Simple Style (PRO Only)"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Simple_Article.php:36
+msgctxt "backend"
+msgid "Simple Style"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Youtube_Article.php:35
+msgctxt "backend"
+msgid "Youtube Style"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Youtube_Article.php:104
+msgctxt "backend"
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/Article_Block/Blocks/Youtube_Article.php:289
+msgctxt "backend"
+msgid "Youtube Style (PRO Only)"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Background_Color_Setting.php:30
+msgctxt "backend"
+msgid "Background color:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Border_Radius_Setting.php:30
+msgctxt "backend"
+msgid "Border Radius:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Color_Setting.php:30
+msgctxt "backend"
+msgid "Font color:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Flex_Order_Setting.php:30
+msgctxt "backend, noun"
+msgid "Order:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Font_Size_Setting.php:30
+msgctxt "backend, CSS unit"
+msgid "Font size:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Font_Weight_Setting.php:30
+msgctxt "backend"
+msgid "Font weight:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Font_Weight_Setting.php:33
+#: inc/Tabs_Creator/Tabs_Styles/Tab_Style.php:106
+msgctxt "backend"
+msgid "Not set"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Font_Weight_Setting.php:34
+msgctxt "backend"
+msgid "inherit"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Hover_Background_Color_Setting.php:30
+msgctxt "backend"
+msgid "Background color - mouse over:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Hover_Color_Setting.php:30
+msgctxt "backend"
+msgid "Font color - mouse over:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Hover_Text_Decoration_Setting.php:31
+msgctxt "backend"
+msgid "Text decoration - mouse over:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Line_Height_Setting.php:30
+msgctxt "backend, font line"
+msgid "Line Height:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Maximum_Excerpt_Lines_Setting.php:31
+msgctxt "backend"
+msgid "Lines of excerpt(maximum):"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Meta_Font_Size_Setting.php:30
+#: inc/Article_Block/Component/Component_Settings/Title_Font_Size_Setting.php:31
+msgctxt "backend"
+msgid "Font size:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:30
+msgctxt "backend"
+msgid "Text Decoration:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:38
+msgctxt "backend, css - text property"
+msgid "Not set"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:39
+msgctxt "backend, css - text property"
+msgid "underline"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:40
+msgctxt "backend, css - text property"
+msgid "underline dashed"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:41
+msgctxt "backend, css - text property"
+msgid "underline dotted"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:42
+msgctxt "backend, css - text property"
+msgid "underline wavy"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:43
+msgctxt "backend, css - text property"
+msgid "overline"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Text_Decoration_Setting.php:44
+msgctxt "backend, css - text property"
+msgid "line-through"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Youtube_Style_Thumbnail_Width.php:30
+msgctxt "backend"
+msgid "Width:"
+msgstr ""
+
+#: inc/Article_Block/Component/Component_Settings/Youtube_Style_Thumbnail_Width.php:31
+msgctxt "backend, px is a CSS unit"
+msgid "px. (120px default)."
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:155
+msgctxt "backend"
+msgid "(Not Installed)"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:172
+msgctxt "backend"
+msgid "Meta to display:"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:193
+msgctxt "backend"
+msgid "None"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:195
+msgctxt "backend"
+msgid "Author"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:197
+msgctxt "backend"
+msgid "Date"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:199
+msgctxt "backend"
+msgid "Views"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:201
+msgctxt "backend"
+msgid "Rating"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:203
+msgctxt "backend"
+msgid "Rating and Count"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:205
+msgctxt "backend"
+msgid "Number of Comments"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Meta.php:207
+msgctxt "backend"
+msgid "Main Category"
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Post_Excerpt_Setting.php:45
+msgctxt "backend"
+msgid "Display the post excerpt."
+msgstr ""
+
+#: inc/Article_Block/Settings/Display_Post_Thumbnail_Setting.php:45
+msgctxt "backend"
+msgid "Display the post thumbnail."
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:267
+msgctxt "backend"
+msgid "color picker dialog"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:268
+msgctxt "backend"
+msgid "toggle color picker dialog"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:269
+msgctxt "backend"
+msgid "color swatch"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:270
+msgctxt "backend"
+msgid "use previous color"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:271
+msgctxt "backend"
+msgid "Save"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:272
+msgctxt "backend"
+msgid "Cancel"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:273
+msgctxt "backend"
+msgid "Clear"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:276
+msgctxt "backend, screen reader text"
+msgid "save and close"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:277
+msgctxt "backend, screen reader text"
+msgid "cancel and close"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:278
+msgctxt "backend, screen reader text"
+msgid "clear and close"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:279
+msgctxt "backend, screen reader text"
+msgid "color input field"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:280
+msgctxt "backend, screen reader text"
+msgid "color selection area"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:281
+msgctxt "backend, screen reader text"
+msgid "hue selection slider"
+msgstr ""
+
+#: inc/Enqueue_Scripts/Enqueue_Scripts.php:282
+msgctxt "backend, screen reader text"
+msgid "selection slider"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:18
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:16
+#: inc/Icons/Definitions/Comments_Icons.php:16
+#: inc/Icons/Definitions/Date_Icons.php:18
+#: inc/Icons/Definitions/Rating_Icons.php:18
+#: inc/Icons/Definitions/User_Icons.php:18
+#: inc/Icons/Definitions/Views_Icons.php:18
+msgctxt "backend, icon type(aspect)"
+msgid "Filled"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:19
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:17
+#: inc/Icons/Definitions/Comments_Icons.php:17
+#: inc/Icons/Definitions/Date_Icons.php:19
+#: inc/Icons/Definitions/Rating_Icons.php:19
+#: inc/Icons/Definitions/User_Icons.php:19
+#: inc/Icons/Definitions/Views_Icons.php:19
+msgctxt "backend, icon type(aspect)"
+msgid "Outlined"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:20
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:18
+#: inc/Icons/Definitions/Comments_Icons.php:18
+#: inc/Icons/Definitions/Date_Icons.php:20
+#: inc/Icons/Definitions/User_Icons.php:20
+#: inc/Icons/Definitions/Views_Icons.php:20
+msgctxt "backend, icon type(aspect)"
+msgid "DuoTone"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:21
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:19
+#: inc/Icons/Definitions/Comments_Icons.php:19
+#: inc/Icons/Definitions/Date_Icons.php:21
+#: inc/Icons/Definitions/Rating_Icons.php:21
+#: inc/Icons/Definitions/User_Icons.php:21
+#: inc/Icons/Definitions/Views_Icons.php:21
+msgctxt "backend, icon type(aspect)"
+msgid "Thin"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:22
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:20
+#: inc/Icons/Definitions/Comments_Icons.php:20
+#: inc/Icons/Definitions/Date_Icons.php:22
+#: inc/Icons/Definitions/User_Icons.php:22
+#: inc/Icons/Definitions/Views_Icons.php:22
+msgctxt "backend, icon type(aspect)"
+msgid "Sharp"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "Bookmark"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:25
+msgctxt "backend, icon name(description)"
+msgid "Bookmark 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:26
+msgctxt "backend, icon name(description)"
+msgid "Bookmark 3"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:27
+msgctxt "backend, icon name(description)"
+msgid "Bookmarks"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:28
+msgctxt "backend, icon name(description)"
+msgid "Bookmarks 2"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Category_Icons.php:30
+msgctxt "backend, icon name(description)"
+msgid "Ios Bookmarks"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:31
+msgctxt "backend, icon name(description)"
+msgid "Folder"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:32
+msgctxt "backend, icon name(description)"
+msgid "Folder Open"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:33
+msgctxt "backend, icon name(description)"
+msgid "Folders"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Category_Icons.php:35
+msgctxt "backend, icon name(description)"
+msgid "Ios Folder"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:36
+msgctxt "backend, icon name(description)"
+msgid "Hashtag"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:37
+msgctxt "backend, icon name(description)"
+msgid "Label"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:38
+msgctxt "backend, icon name(description)"
+msgid "Label 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:39
+msgctxt "backend, icon name(description)"
+msgid "Tag Heart"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:41
+msgctxt "backend, icon name(description)"
+msgid "Tag"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:42
+msgctxt "backend, icon name(description)"
+msgid "Tag 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:43
+msgctxt "backend, icon name(description)"
+msgid "Tags"
+msgstr ""
+
+#: inc/Icons/Definitions/Category_Icons.php:44
+msgctxt "backend, icon name(description)"
+msgid "Tags 2"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Category_Icons.php:46
+msgctxt "backend, icon name(description)"
+msgid "Ios Tag"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Category_Icons.php:48
+msgctxt "backend, icon name(description)"
+msgid "Ios Tags"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:22
+msgctxt "backend, icon name(description)"
+msgid "Comment Disabled"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:23
+msgctxt "backend, icon name(description)"
+msgid "Comments Disabled"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "Comment Alt Disabled"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Disabled_Icons.php:25
+msgctxt "backend, icon name(description)"
+msgid "Comments Alt Disabled"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:21
+#: inc/Icons/Definitions/Rating_Icons.php:20
+msgctxt "backend"
+msgid "Half Filled"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:23
+msgctxt "backend, icon name(description)"
+msgid "Comment"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "Comment 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:25
+msgctxt "backend, icon name(description)"
+msgid "Comment 3"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:26
+msgctxt "backend, icon name(description)"
+msgid "Comment 4"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:27
+msgctxt "backend, icon name(description)"
+msgid "Comment Dollar"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:29
+msgctxt "backend, icon name(description)"
+msgid "Comments"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:30
+msgctxt "backend, icon name(description)"
+msgid "Comments 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:31
+msgctxt "backend, icon name(description)"
+msgid "Comments 3"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:32
+msgctxt "backend, icon name(description)"
+msgid "Comments 4"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:33
+msgctxt "backend, icon name(description)"
+msgid "Comments 5"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:34
+msgctxt "backend, icon name(description)"
+msgid "Comments 6"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:35
+msgctxt "backend, icon name(description)"
+msgid "Comments 7"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:36
+msgctxt "backend, icon name(description)"
+msgid "Comments 8"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:38
+msgctxt "backend, icon name(description)"
+msgid "Dots"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:39
+msgctxt "backend, icon name(description)"
+msgid "Dots 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:40
+msgctxt "backend, icon name(description)"
+msgid "Content"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:41
+msgctxt "backend, icon name(description)"
+msgid "Content 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:42
+msgctxt "backend, icon name(description)"
+msgid "Square"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:43
+msgctxt "backend, icon name(description)"
+msgid "Bank"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:44
+msgctxt "backend, icon name(description)"
+msgid "Feedback"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:45
+msgctxt "backend, icon name(description)"
+msgid "Lines"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:46
+#: inc/Icons/Definitions/User_Icons.php:26
+msgctxt "backend, icon name(description)"
+msgid "Circle"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:47
+#: inc/Icons/Definitions/Rating_Icons.php:29
+msgctxt "backend, icon name(description)"
+msgid "Heart"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:48
+msgctxt "backend, icon name(description)"
+msgid "Happy"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:50
+msgctxt "backend, icon name(description)"
+msgid "Ios Comment"
+msgstr ""
+
+#: inc/Icons/Definitions/Comments_Icons.php:51
+msgctxt "backend, icon name(description)"
+msgid "Ios Comments"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "Calendar"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:25
+msgctxt "backend, icon name(description)"
+msgid "Calendar 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:26
+msgctxt "backend, icon name(description)"
+msgid "Calendar 3"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:27
+msgctxt "backend, icon name(description)"
+msgid "Calendar 4"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:28
+msgctxt "backend, icon name(description)"
+msgid "Calendar 5"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:29
+msgctxt "backend, icon name(description)"
+msgid "Calendar Today"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:30
+msgctxt "backend, icon name(description)"
+msgid "Calendar Range"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:32
+msgctxt "backend, icon name(description)"
+msgid "Clock"
+msgstr ""
+
+#: inc/Icons/Definitions/Date_Icons.php:33
+msgctxt "backend, icon name(description)"
+msgid "Clock 2"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Date_Icons.php:36
+msgctxt "backend, icon name(description)"
+msgid "Ios Calendar"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Date_Icons.php:38
+msgctxt "backend, icon name(description)"
+msgid "Ios Clock"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Date_Icons.php:40
+msgctxt "backend, icon name(description)"
+msgid "Ios Time"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:23
+msgctxt "backend, icon name(description)"
+msgid "Star"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "Star Sharp"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Rating_Icons.php:26
+msgctxt "backend, icon name(description)"
+msgid "Ios Star"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:27
+msgctxt "backend, icon name(description)"
+msgid "Stars"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:30
+msgctxt "backend, icon name(description)"
+msgid "Heart Thin"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:341
+msgctxt "backend, icons package name(description)"
+msgid "Stars"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:342
+msgctxt "backend, icons package name(description)"
+msgid "Stars Sharp"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Rating_Icons.php:344
+msgctxt "backend, icons package name(description)"
+msgid "Ios Stars"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:345
+msgctxt "backend, icons package name(description)"
+msgid "Hearts"
+msgstr ""
+
+#: inc/Icons/Definitions/Rating_Icons.php:346
+msgctxt "backend, icons package name(description)"
+msgid "Hearts Thin"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "User"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:25
+msgctxt "backend, icon name(description)"
+msgid "User 2"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:27
+msgctxt "backend, icon name(description)"
+msgid "Box"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:28
+msgctxt "backend, icon name(description)"
+msgid "Person"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/User_Icons.php:30
+msgctxt "backend, icon name(description)"
+msgid "Ios Person"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:31
+msgctxt "backend, icon name(description)"
+msgid "Man"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:32
+msgctxt "backend, icon name(description)"
+msgid "Woman"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:33
+msgctxt "backend, icon name(description)"
+msgid "Tie"
+msgstr ""
+
+#: inc/Icons/Definitions/User_Icons.php:34
+msgctxt "backend, icon name(description)"
+msgid "Graduate"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:24
+msgctxt "backend, icon name(description)"
+msgid "Eye"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:25
+msgctxt "backend, icon name(description)"
+msgid "Eye 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:26
+msgctxt "backend, icon name(description)"
+msgid "Eye 3"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:27
+msgctxt "backend, icon name(description)"
+msgid "Eye 4"
+msgstr ""
+
+#. translators: Ios is an Apple Phone operating system.
+#: inc/Icons/Definitions/Views_Icons.php:29
+msgctxt "backend, icon name(description)"
+msgid "Ios Eye"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:30
+msgctxt "backend, icon name(description)"
+msgid "Chart"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:31
+msgctxt "backend, icon name(description)"
+msgid "Chart 2"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:32
+msgctxt "backend, icon name(description)"
+msgid "Chart 3"
+msgstr ""
+
+#: inc/Icons/Definitions/Views_Icons.php:33
+msgctxt "backend, icon name(description)"
+msgid "Bar Chart"
+msgstr ""
+
+#: inc/Plugins/Post_Rating.php:171
+#: inc/Plugins/Post_Views.php:145
+msgctxt "backend"
+msgid "Plugin not installed"
+msgstr ""
+
+#: inc/Plugins/Post_Rating.php:174
+msgctxt "backend"
+msgid "Order by rating"
+msgstr ""
+
+#: inc/Plugins/Post_Rating.php:181
+msgctxt "backend"
+msgid "Order by rating count"
+msgstr ""
+
+#: inc/Plugins/Post_Views.php:148
+msgctxt "backend"
+msgid "Order by post views"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:32
+msgctxt "backend"
+msgid "Exists"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:33
+msgctxt "backend"
+msgid "Not Exists"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:34
+msgctxt "backend"
+msgid "Not equal (!=)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:35
+msgctxt "backend"
+msgid "Equal (=)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:36
+msgctxt "backend"
+msgid "Bigger or equal than (>=)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:37
+msgctxt "backend"
+msgid "Less or equal than (<=)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:38
+msgctxt "backend"
+msgid "Bigger than (>)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Meta_Setting.php:39
+msgctxt "backend"
+msgid "Less than (<)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:62
+msgctxt "backend"
+msgid "Order by post id"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:63
+msgctxt "backend"
+msgid "Order by author"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:64
+msgctxt "backend"
+msgid "Order by title"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:65
+msgctxt "backend"
+msgid "Order by post slug"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:66
+msgctxt "backend"
+msgid "Order by post type"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:67
+msgctxt "backend"
+msgid "Order by date"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:68
+msgctxt "backend"
+msgid "Order by last modified date"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:69
+msgctxt "backend"
+msgid "Order by post/page parent id"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:70
+msgctxt "backend"
+msgid "Random order"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:71
+msgctxt "backend"
+msgid "Order by number of comments"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:72
+msgctxt "backend"
+msgid "Order by searched terms"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:73
+msgctxt "backend"
+msgid "Order by meta value(alphabetically)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:74
+msgctxt "backend"
+msgid "Order by meta value(numerically)"
+msgstr ""
+
+#: inc/Query_Generator/Query_Setting/Post_Order.php:75
+msgctxt "backend"
+msgid "Order by included posts(sort them below)"
+msgstr ""
+
+#. translators: %s: an unique id number, this translation will be displayed if somehow no query name is present.
+#: inc/Query_Generator/Query_Setting/Query_Name.php:71
+msgctxt "backend"
+msgid "Query-%s"
+msgstr ""
+
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Button_Tabs.php:13
+msgctxt "backend"
+msgid "Buttons Style"
+msgstr ""
+
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Button_Tabs.php:19
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Simple_Tabs.php:20
+msgctxt "backend, name of style"
+msgid "Inversed"
+msgstr ""
+
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Button_Tabs.php:20
+msgctxt "backend, name of style"
+msgid "Neon"
+msgstr ""
+
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Simple_Tabs.php:13
+msgctxt "backend"
+msgid "Tabs Style"
+msgstr ""
+
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Simple_Tabs.php:18
+msgctxt "backend, name of style"
+msgid "Accent"
+msgstr ""
+
+#: inc/Tabs_Creator/Tabs_Styles/Styles/Simple_Tabs.php:19
+msgctxt "backend, name of style"
+msgid "Accent Light"
+msgstr ""
+
+#: inc/TWRP_Widget.php:45
+msgctxt "backend"
+msgid "Tabs with recommended posts. The settings are available at Settings->Tabs With Recommended Posts"
+msgstr ""
+
+#. translators: %d is the number of minutes.
+#: inc/Utils/Background_Processing/WP_Background_Process.php:451
+msgctxt "backend"
+msgid "Every %d Minutes"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:108
+msgid "Show more posts"
+msgstr ""
+
+#. translators: Text to display if a post has no title.
+#: inc/Utils/Frontend_Translation.php:110
+msgctxt "title if the post has no title."
+msgid "&laquo; No title &raquo;"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:111
+msgid "Post with no thumbnail"
+msgstr ""
+
+#. translators: %s: a date representation, in human language. Ex: 2 days ago, 3 weeks ago,  1 month ago... etc. the %s is expected to be already translated.
+#: inc/Utils/Frontend_Translation.php:113
+msgid "%s ago"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:114
+msgid "Loading articles failed, please refresh the page to try again."
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:115
+msgid "Unfortunately, no posts are here."
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:117
+msgctxt "Noun, accessibility text"
+msgid "Author"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:118
+msgctxt "Noun, accessibility text"
+msgid "Date"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:119
+msgctxt "Noun, accessibility text"
+msgid "Views"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:120
+msgctxt "Noun, accessibility text"
+msgid "Rating"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:121
+msgctxt "Noun, accessibility text"
+msgid "Category"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:122
+msgctxt "Noun, accessibility text"
+msgid "Comments"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:123
+msgctxt "Noun, accessibility text"
+msgid "Comments are disabled"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:125
+msgctxt "Abbreviation for Thousands"
+msgid "K"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:126
+msgctxt "Abbreviation for Millions"
+msgid "M"
+msgstr ""
+
+#: inc/Utils/Frontend_Translation.php:127
+msgctxt "Abbreviation for Billions"
+msgid "B"
+msgstr ""

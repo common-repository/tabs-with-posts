@@ -1,0 +1,61 @@
+.twrpb-queries-table {
+	width: 100%;
+	overflow: hidden;
+	font-size: 1rem;
+	color: black;
+	border-spacing: 0;
+	border-collapse: collapse;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+	td,
+	th {
+		padding: 16px 16px;
+		text-align: left;
+	}
+
+	tr:nth-child(even),
+	thead {
+		background-color: #f6f6f6;
+	}
+
+	&__edit-col,
+	&__edit-head {
+		width: 20%;
+		white-space: nowrap;
+		border-left: 1px solid #ddd;
+	}
+
+	&__edit-col {
+		padding-left: 14px;
+		font-size: 0.9rem;
+	}
+
+	&__edit-head,
+	&__title-head, {
+		font-size: 1.1rem;
+		font-weight: 600;
+		border-bottom: 1px solid #ccc;
+	}
+
+	&__edit-icon,
+	&__delete-icon {
+		margin-right: 0.2rem;
+		font-size: 1.2rem;
+		text-decoration: none;
+		vertical-align: text-bottom;
+	}
+
+	&__edit-delete-separator {
+		margin-left: 0.2rem;
+	}
+
+	&__delete-link {
+		color: #a00;
+
+		&:hover {
+			color: #dc3232;
+		}
+	}
+}

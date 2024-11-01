@@ -1,0 +1,27 @@
+.twrp-thumbnail-wrapper {
+	@extend .twrp-reset-box;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	overflow: hidden;
+
+	&::before {
+		display: block;
+		padding-top: 56.25%;
+		content: "";
+	}
+}
+
+.twrp-thumbnail {
+	@extend .twrp-reset-box;
+
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	object-fit: cover;
+	border: 0;
+}

@@ -1,0 +1,12 @@
+.twrp-link-expand {
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		// In case that there is another absolute element, make this display first.
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		content: "";
+	}
+}

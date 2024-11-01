@@ -1,0 +1,30 @@
+.twrpb-general-number {
+	&__title {
+		margin-bottom: 0.5rem;
+		font-size: 1.1rem;
+		font-weight: 500;
+		line-height: 1.3;
+		color: #333;
+	}
+
+	&__description {
+		margin-bottom: 0.6rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__before-input {
+		margin-right: 8px;
+	}
+
+	&__after-input {
+		margin-left: 8px;
+	}
+
+	input {
+		max-width: 80px;
+	}
+}

@@ -1,0 +1,14 @@
+.twrpb-notification {
+	padding: 1.2rem 1rem;
+	border-radius: 4px;
+
+	&--success {
+		color: white;
+		background: linear-gradient(-45deg, #5baf08, #066c00);
+	}
+
+	&--failed {
+		color: white;
+		background: linear-gradient(-45deg, #eb0101, #910000);
+	}
+}

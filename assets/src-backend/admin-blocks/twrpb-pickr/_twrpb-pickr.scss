@@ -1,0 +1,32 @@
+.twrpb-pickr[data-theme=monolith] {
+	width: 200px;
+	max-width: 90vw;
+
+	.pcr-color-palette .pcr-palette {
+		background: linear-gradient(to top, rgb(0, 0, 0), transparent), linear-gradient(to left, rgb(255, 0, 0), rgb(255, 255, 255));
+	}
+
+	.pcr-selection .pcr-color-preview .pcr-last-color {
+		color: rgb(0, 0, 0);
+	}
+
+	.pcr-selection .pcr-color-preview .pcr-current-color {
+		color: rgb(0, 0, 0);
+	}
+
+	.pcr-color-palette .pcr-picker {
+		top: calc(100% - 9px);
+		left: calc(0% - 9px);
+		background: rgb(0, 0, 0);
+	}
+
+	.pcr-color-chooser .pcr-picker {
+		left: calc(0% - 9px);
+		background-color: rgb(255, 0, 0);
+	}
+
+	.pcr-color-opacity .pcr-picker {
+		left: calc(100% - 9px);
+		background: rgb(0, 0, 0);
+	}
+}

@@ -1,0 +1,24 @@
+.twrp-main {
+	&__title {
+		@extend .twrp-reset-box;
+
+		margin-bottom: 0.4rem;
+		font-size: 1.1rem;
+	}
+
+	// polyfill
+	[hidden="hidden"] {
+		display: none;
+	}
+
+	&__no-posts-wrapper {
+		@extend .twrp-reset-box;
+	}
+
+	&__no-posts-text {
+		@extend .twrp-reset-box;
+
+		display: inline-block;
+		color: var(--twrp-text-color);
+	}
+}

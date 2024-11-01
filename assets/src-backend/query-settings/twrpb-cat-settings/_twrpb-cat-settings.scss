@@ -1,0 +1,38 @@
+.twrpb-cat-settings {
+	// Select type wrapper.
+	&__select-type-text,
+	&__select-relation-text {
+		display: inline;
+		margin-right: 0.2rem;
+	}
+
+	&__section-title {
+		margin: 0.5rem 0;
+	}
+
+	&__separator {
+		width: 100%;
+		height: 1px;
+		margin: 1rem 0;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.2497373949579832) 0%, rgba(184, 184, 184, 0.2805497198879552) 34%, rgba(255, 255, 255, 0) 100%);
+		border: 0;
+	}
+
+	&__add-cat-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		select {
+			margin-right: 0.3rem;
+		}
+	}
+
+	&__include-children-wrap {
+		margin-top: 0 !important;
+	}
+
+	&__select-relation-wrap {
+		margin: 0 !important;
+	}
+}

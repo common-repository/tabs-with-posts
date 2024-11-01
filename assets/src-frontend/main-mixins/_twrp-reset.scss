@@ -1,0 +1,39 @@
+// The reset classes are used to make sure that an element don't inherit some
+// random styles from the theme style... or at least try to minimize them.
+// The reset styles must be used together, and if a reset style is implemented,
+// the others before should also. Ex, don't implement only reset-anchor without
+// reset-box. Reset-box must be implemented too.
+
+// Basic reset, usually for elements like div/spans.
+.twrp-reset-box {
+	position: static;
+	box-sizing: border-box;
+	display: block;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	border-width: 0;
+	border-radius: 0;
+}
+
+// For elements that can have other styles like anchor tags or buttons.
+// line-height and font-weight can be inherited.
+.twrp-reset-anchor {
+	color: initial;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	cursor: pointer;
+	visibility: visible;
+	background: initial;
+	outline-width: 0;
+	box-shadow: none;
+	opacity: 1;
+}
+
+// For elements to overwrite other inherited styles that can be inherited.
+.twrp-reset-inherited-and-more {
+	font-size: 1rem;
+	font-weight: initial;
+	line-height: 1.5;
+}

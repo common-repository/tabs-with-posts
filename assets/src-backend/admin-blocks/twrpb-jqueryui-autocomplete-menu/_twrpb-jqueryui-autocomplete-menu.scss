@@ -1,0 +1,13 @@
+.twrpb-jqueryui-autocomplete-menu .ui-menu-item {
+	padding: 0 !important;
+}
+
+.twrpb-jqueryui-autocomplete-menu .ui-menu-item-wrapper {
+	padding: 0.4rem 0.8rem;
+	transition: background-color 100ms ease;
+}
+
+.twrpb-jqueryui-autocomplete-menu .ui-menu-item-wrapper.ui-state-active {
+	color: white;
+	background-color: #007ce9 !important;
+}

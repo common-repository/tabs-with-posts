@@ -1,0 +1,30 @@
+.twrpb-date-settings {
+	&__last-period-wrapper,
+	&__between-wrapper {
+		> :first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__custom-last-days-wrapper {
+		> * {
+			vertical-align: middle;
+		}
+	}
+
+	&__last-days-input {
+		margin-left: 0.3rem;
+	}
+
+	&__after-label,
+	&__before-label {
+		display: inline-block;
+		margin-bottom: 0.15rem;
+		margin-left: 0.15rem;
+	}
+
+	&__after-wrapper,
+	&__before-wrapper {
+		display: inline-block;
+	}
+}
